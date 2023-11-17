@@ -9,5 +9,11 @@
 }
 
 .form-input {
-  @apply py-2.5 px-3 border rounded-md text-xs font-semibold leading-3 text-[color:var(--gray-gray-600,#7E8299)];
+  @apply w-full py-2.5 px-3 border rounded-md text-xs font-semibold leading-3 text-[color:var(--gray-gray-600,#7E8299)];
+}
+.form-error {
+  @apply pt-2.5 pl-2.5 text-xs font-semibold leading-3 text-red-300;
+}
+.account-details-submit {
+  @apply w-full py-3 rounded-md !bg-[#006CEA] flex justify-center gap-1 text-base font-semibold leading-4 text-white;
 }

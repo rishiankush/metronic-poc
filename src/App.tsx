@@ -16,22 +16,23 @@ function App() {
   return loading ? (
     <Loader />
   ) : (
-      <Routes>
-        <Route path='/signUp' element={<SignUp />} />
+    <Routes>
+      <Route path='/signUp' element={<SignUp />} />
 
-        <Route element={<DefaultLayout />}>
-          {coreRoutes.map(({ path, component: Component }) => (
-            <Route
-              path={path}
-              element={
-                <Suspense fallback={<Loader />}>
-                  <Component />
-                </Suspense>
-              }
-            />
-          ))}
-        </Route>
-      </Routes>
+      <Route element={<DefaultLayout />}>
+        {coreRoutes.map(({ path, component: Component }) => (
+          <Route
+            key={path}
+            path={path}
+            element={
+              <Suspense fallback={<Loader />}>
+                <Component />
+              </Suspense>
+            }
+          />
+        ))}
+      </Route>
+    </Routes>
   );
 }
 

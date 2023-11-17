@@ -13,7 +13,7 @@
 }
 
 .stats-list {
-  @apply w-full grid grid-cols-4 gap-8;
+  @apply w-full grid sm:grid-cols-2 lg:grid-cols-4 gap-8;
 }
 .stats-box {
   @apply bg-white rounded-2xl p-6 border-b-[3px] flex flex-col gap-3;

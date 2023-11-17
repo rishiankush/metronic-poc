@@ -7,107 +7,14 @@ import {
 import profileCircleIcon from '../../assets/homeIcons/profile-circle.svg';
 import exportIcon from '../../assets/homeIcons/exportIcon.svg';
 import '../../styles/home.css';
+import { tableData } from '../../mockData/tableData';
 
 const pages = [1, 2, 3, 4, 5];
-
-const list = [
-  {
-    id: 65658,
-    dateRemoved: '23 Sep 2023',
-    link: 'https://google. com',
-    source: 'Reddit',
-    action: 'Removed',
-  },
-  {
-    id: 65658,
-    dateRemoved: '23 Sep 2023',
-    link: 'https://google. com',
-    source: 'Reddit',
-    action: 'Delisted',
-  },
-  {
-    id: 65658,
-    dateRemoved: '23 Sep 2023',
-    link: 'https://google. com',
-    source: 'Reddit',
-    action: 'Removed',
-  },
-  {
-    id: 65658,
-    dateRemoved: '23 Sep 2023',
-    link: 'https://google. com',
-    source: 'Reddit',
-    action: 'Delisted',
-  },
-  {
-    id: 65658,
-    dateRemoved: '23 Sep 2023',
-    link: 'https://google. com',
-    source: 'Reddit',
-    action: 'Removed',
-  },
-  {
-    id: 65658,
-    dateRemoved: '23 Sep 2023',
-    link: 'https://google. com',
-    source: 'Reddit',
-    action: 'Delisted',
-  },
-  {
-    id: 65658,
-    dateRemoved: '23 Sep 2023',
-    link: 'https://google. com',
-    source: 'Reddit',
-    action: 'Removed',
-  },
-  {
-    id: 65658,
-    dateRemoved: '23 Sep 2023',
-    link: 'https://google. com',
-    source: 'Reddit',
-    action: 'Delisted',
-  },
-  {
-    id: 65658,
-    dateRemoved: '23 Sep 2023',
-    link: 'https://google. com',
-    source: 'Reddit',
-    action: 'Removed',
-  },
-  {
-    id: 65658,
-    dateRemoved: '23 Sep 2023',
-    link: 'https://google. com',
-    source: 'Reddit',
-    action: 'Delisted',
-  },
-  {
-    id: 65658,
-    dateRemoved: '23 Sep 2023',
-    link: 'https://google. com',
-    source: 'Reddit',
-    action: 'Removed',
-  },
-  {
-    id: 65658,
-    dateRemoved: '23 Sep 2023',
-    link: 'https://google. com',
-    source: 'Reddit',
-    action: 'Delisted',
-  },
-  {
-    id: 65658,
-    dateRemoved: '23 Sep 2023',
-    link: 'https://google. com',
-    source: 'Reddit',
-    action: 'Removed',
-  },
-];
 
 export function Table() {
   return (
     <div className='w-full p-8 rounded-2xl flex flex-col gap-8 bg-white'>
-      <section className='flex justify-between'>
+      <section className='flex flex-col sm:flex-row justify-between'>
         <div className='w-44 p-3 rounded-md bg-[#f9f9f9] flex items-center gap-4'>
           <img src={profileCircleIcon} />
           <p className='text-[color:var(--gray-gray-600,#7E8299)] text-xs font-semibold leading-3'>
@@ -141,7 +48,7 @@ export function Table() {
           </tr>
         </thead>
         <tbody>
-          {list.map((item, index) => (
+          {tableData.map((item, index) => (
             <tr key={index} className='row'>
               <td className='table-row-data '>
                 <div className='flex items-center gap-5 text-sm font-semibold leading-[14px] text-[color:var(--white-dark-dark,#181C32)]'>

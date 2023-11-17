@@ -4,7 +4,7 @@ import '../../styles/defaultLayout.css';
 
 export function Sidebar() {
   return (
-    <div className='w-1/6 p-8'>
+    <div className='absolute sm:relative sm:block sm:w-1/6 h-full p-8 bg-white'>
       <div className='flex flex-col gap-1'>
         {coreRoutes.map((item, index) => (
           <NavLink

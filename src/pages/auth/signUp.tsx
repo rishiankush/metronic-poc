@@ -16,12 +16,12 @@ export default function SignUp() {
   const [activeStep, setActiveStep] = useState(1);
 
   return (
-    <div className='w-full h-screen flex overflow-y-hidden'>
+    <div className='w-full h-full flex overflow-y-hidden'>
       <section className='signUp-stepper bg-[url("./assets/auth/signUpbackground.svg")]'>
         <img src={AuthLogo} />
         <div className='flex flex-col gap-1.5'>
           {steps.map((step, index) => (
-            <>
+            <div key={index}>
               <div className='flex items-center gap-5'>
                 <div
                   className={`h-fit w-fit py-3 px-4 border rounded-lg border-dashed border-white border-opacity-30 ${
@@ -42,7 +42,7 @@ export default function SignUp() {
               {index !== steps.length - 1 && (
                 <div className='h-10 ml-5 border-l border-dashed border-white border-opacity-30'></div>
               )}
-            </>
+            </div>
           ))}
         </div>
         <div className='flex gap-10 text-[color:var(--success-success,#50CD89)] text-[13px] font-medium leading-[14px]'>
