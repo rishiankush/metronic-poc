@@ -1,0 +1,7 @@
+.header {
+    @apply w-full h-20 max-h-20 py-5 px-8 border-[color:var(--gray-gray-300,#E1E3EA)] border-b flex justify-between items-center sticky z-10 top-0 bg-white
+}
+
+.sidebar-menuItem {
+    @apply w-full p-2 rounded-md flex gap-3 text-[15px] font-semibold text-[color:var(--gray-gray-700,#5E6278)] leading-4 hover:bg-[#EEF6FF] hover:text-[#3E97FF]
+}

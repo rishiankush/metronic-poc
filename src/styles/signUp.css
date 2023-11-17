@@ -1,0 +1,13 @@
+.signUp-stepper {
+  @apply w-[30%] p-20 flex flex-col gap-24 justify-center items-center bg-cover;
+}
+.step-label {
+  @apply text-[color:var(--white-dark-white,#FFF)] text-xl font-semibold leading-5 tracking-[-0.2px] opacity-70;
+}
+.step-caption {
+  @apply text-[color:var(--white-dark-white,#FFF)] text-[13px] not-italic font-medium leading-[14px] opacity-50;
+}
+
+.form-input {
+  @apply py-2.5 px-3 border rounded-md text-xs font-semibold leading-3 text-[color:var(--gray-gray-600,#7E8299)];
+}

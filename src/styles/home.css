@@ -1,0 +1,36 @@
+.home {
+  @apply p-6 flex flex-col gap-6
+}
+
+.filter-text {
+  @apply text-[color:var(--gray-gray-600,#7e8299)] text-sm not-italic font-medium leading-3;
+}
+.dropdown-button {
+  @apply w-full max-w-[150px] min-w-[150px] inline-flex justify-between items-center gap-x-1.5 rounded-md bg-white p-3 text-[#3F4254] text-xs font-semibold leading-3;
+}
+.dropdown {
+  @apply absolute right-0 z-10 mt-2 w-56 py-2.5 px-1.5 gap-1.5 origin-top-right rounded-md bg-white shadow-lg focus:outline-none;
+}
+
+.stats-list {
+  @apply w-full grid grid-cols-4 gap-8;
+}
+.stats-box {
+  @apply bg-white rounded-2xl p-6 border-b-[3px] flex flex-col gap-3;
+}
+.stats-number {
+  @apply text-[34px] font-semibold leading-[34px] tracking-[-0.68px];
+}
+.stats-description {
+  @apply text-[color:var(--gray-gray-700,#5e6278)] text-base not-italic font-medium leading-4;
+}
+
+.table-heading {
+    @apply w-1/5 py-5 border-b border-dashed text-[color:var(--gray-gray-500,#A1A5B7)] text-xs font-semibold leading-3 ;
+}
+.row {
+    @apply w-full
+}
+.table-row-data {
+  @apply py-6 border-b text-center
+}
