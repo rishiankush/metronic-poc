@@ -1,8 +1,9 @@
 import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
+import { FormError } from '../common/formError';
 import GoogleIcon from '../../assets/auth/GoogleIcon.svg';
 import AppleIcon from '../../assets/auth/appleIcon.svg';
 import '../../styles/signUp.css';
-import { FormError } from '../common/formError';
 
 export function AccountDetails() {
   const {
@@ -10,13 +11,14 @@ export function AccountDetails() {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  const navigate = useNavigate();
 
-  const submitDetails = (data: any) => console.log(data);
+  const submitDetails = () => navigate('/');
 
   console.log(errors);
 
   return (
-    <div className='flex flex-col items-center gap-9'>
+    <div className='h-full flex flex-col items-center gap-9 overflow-y-scroll'>
       <div className='flex flex-col gap-4'>
         <h1 className='text-[color:var(--gray-gray-900,#181C32)] text-2xl font-semibold leading-6 text-center tracking-[-0.24px]'>
           Account Details
@@ -98,8 +100,7 @@ export function AccountDetails() {
               type='number'
               {...register('phoneNumber', {
                 required: 'This field is required',
-                minLength: 10,
-                maxLength: 10,
+                minLength: 7,
               })}
               placeholder='Phone Number'
               className='form-input'

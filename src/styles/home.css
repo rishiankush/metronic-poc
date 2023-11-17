@@ -1,5 +1,5 @@
 .home {
-  @apply p-6 flex flex-col gap-6
+  @apply p-6 flex flex-col gap-6 overflow-x-hidden;
 }
 
 .filter-text {
@@ -26,11 +26,11 @@
 }
 
 .table-heading {
-    @apply w-1/5 py-5 border-b border-dashed text-[color:var(--gray-gray-500,#A1A5B7)] text-xs font-semibold leading-3 ;
+  @apply w-1/5 p-5 border-b border-dashed text-[color:var(--gray-gray-500,#A1A5B7)] text-xs font-semibold leading-3;
 }
 .row {
-    @apply w-full
+  @apply w-full;
 }
 .table-row-data {
-  @apply py-6 border-b text-center
+  @apply px-5 py-6 border-b text-center;
 }

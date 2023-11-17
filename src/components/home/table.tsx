@@ -13,8 +13,8 @@ const pages = [1, 2, 3, 4, 5];
 
 export function Table() {
   return (
-    <div className='w-full p-8 rounded-2xl flex flex-col gap-8 bg-white'>
-      <section className='flex flex-col sm:flex-row justify-between'>
+    <div className='w-fit sm:w-full p-8 rounded-2xl flex flex-col gap-8 bg-white'>
+      <section className='flex flex-col sm:flex-row gap-5 sm:gap-0 justify-between'>
         <div className='w-44 p-3 rounded-md bg-[#f9f9f9] flex items-center gap-4'>
           <img src={profileCircleIcon} />
           <p className='text-[color:var(--gray-gray-600,#7E8299)] text-xs font-semibold leading-3'>

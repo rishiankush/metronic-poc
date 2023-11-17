@@ -1,7 +1,9 @@
+import '../styles/defaultLayout.css';
 export default function AffiliateProgram() {
   return (
-    <div>
+    <div className='in-development'>
       <div>Affiliate program</div>
+      <div>This page is in development</div>
     </div>
   );
 }

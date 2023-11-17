@@ -8,7 +8,9 @@ export default function Home() {
     <div className='home'>
       <TimeFilterDropdown />
       <Stats />
-      <Table />
+      <div className='overflow-x-scroll'>
+        <Table />
+      </div>
     </div>
   );
 }

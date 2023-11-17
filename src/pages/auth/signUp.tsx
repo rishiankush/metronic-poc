@@ -16,7 +16,7 @@ export default function SignUp() {
   const [activeStep, setActiveStep] = useState(1);
 
   return (
-    <div className='w-full h-full flex overflow-y-hidden'>
+    <div className='w-full h-screen flex overflow-y-hidden'>
       <section className='signUp-stepper bg-[url("./assets/auth/signUpbackground.svg")]'>
         <img src={AuthLogo} />
         <div className='flex flex-col gap-1.5'>
@@ -51,7 +51,7 @@ export default function SignUp() {
           <p>Contact Us</p>
         </div>
       </section>
-      <section className='flex justify-center items-center grow overflow-y-scroll'>
+      <section className='h-full flex justify-center items-center grow overflow-y-hidden'>
         {activeStep === 1 ? (
           <AccountType activeStep={activeStep} setActiveStep={setActiveStep} />
         ) : (
